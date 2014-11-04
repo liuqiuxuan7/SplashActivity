@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.my"
+    android:installLocation="auto"
+    android:versionCode="1"
+    android:versionName="1.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:name="com.example.my.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/a"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.my.ui.SplashActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/SplashTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.my.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.example.my.ui.HomeActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.my.ui.MainActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.my.ui.IndexActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.my.ui.CategoryActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.my.ui.CartActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.my.ui.PersonalActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.my.ui.SearchActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.Present"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.example.my.ui.LoginActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.example.my.ui.RegisterActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.example.my.ui.RegisterBormalActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.example.my.ui.MoreActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.example.my.ui.IndexShakeActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.example.my.ui.IndexClothingActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.example.my.ui.IndexBagsActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.example.my.ui.IndexManActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.example.my.ui.IndexEbookActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.example.my.zxing.CaptureActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.example.my.zxing.CaptureResultActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.example.my.ProtectActivity"
+            android:label="@string/title_activity_protect" >
+        </activity>
+        <activity
+            android:name="com.example.my.ui.IndexOtherActivity"
+            android:label="@string/title_activity_jia_dian" >
+        </activity>
+        <activity
+            android:name="com.example.my.ui.IndexProtectionActivity"
+            android:label="@string/title_activity_protection" >
+        </activity>
+        <activity
+            android:name="com.example.my.IndexClothingActivity"
+            android:label="@string/title_activity_index_clothing" >
+        </activity>
+        <activity
+            android:name="com.example.my.ui.IndexOrnamentActivity"
+            android:label="@string/title_activity_index_phone" >
+        </activity>
+        <activity
+            android:name="com.example.my.ui.IndexShoesActivity"
+            android:label="@string/title_activity_index_jia_ju" >
+        </activity>
+        <activity
+            android:name="com.example.my.ui.ClothPurseActivity"
+            android:label="@string/title_activity_purse_main" >
+        </activity>
+        <activity
+            android:name="com.example.my.ui.BagsPurseActivity"
+            android:label="@string/title_activity_purse" >
+        </activity>
+        <activity
+            android:name="com.example.my.ui.ShoesPurseActivity"
+            android:label="@string/title_activity_shoes_purse" >
+        </activity>
+        <activity
+            android:name="com.example.my.ui.RechangeActivity"
+            android:label="@string/title_activity_rechange" >
+        </activity>
+        <activity
+            android:name="com.example.my.ui.LotteryActivity"
+            android:label="@string/title_activity_lottery" >
+        </activity>
+        <activity
+            android:name="com.example.my.ui.PurseMainActivity"
+            android:label="@string/title_activity_purse_main" >
+        </activity>
+        <activity
+            android:name="com.example.my.ui.EbookPurseActivity"
+            android:label="@string/title_activity_ebook_purse" >
+        </activity>
+        <activity
+            android:name="com.example.my.ui.DeliveryActivity"
+            android:label="@string/title_activity_delivery" >
+        </activity>
+        <activity
+            android:name="com.example.my.ui.TuanActivity"
+            android:label="@string/title_activity_tuan" >
+        </activity>
+        <activity
+            android:name="com.example.my.ui.TuanDetialsActivity"
+            android:label="@string/title_activity_tuan_detials" >
+        </activity>
+        <activity
+            android:name="com.example.my.ui.OtherInfoActivity"
+            android:label="@string/title_activity_other_info" >
+        </activity>
+        <activity
+            android:name="com.example.my.ui.BuyLotteryActivity"
+            android:label="@string/title_activity_buy_lottery" >
+        </activity>
+    </application>
+
+</manifest>

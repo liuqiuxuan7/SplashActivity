@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/id_title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@drawable/android_title_bg" >
+      <Button 
+            android:id="@+id/btn_back_cart" 
+            android:background="@drawable/back_btn" 
+            android:layout_width="wrap_content" 
+            android:layout_height="fill_parent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:text="@string/cart"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/medium_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="480dp" >
+
+        <ListView
+            android:id="@+id/list_cart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        </ListView>
+    </LinearLayout>
+
+  <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="56.0dip"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_count1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"  
+            android:layout_marginLeft="6.0dip"
+            android:layout_marginTop="6.0dip"
+            android:text="邮寄费：￥0.0" />
+
+        <Button
+            android:id="@+id/btn_acount"
+            android:layout_width="60dp"
+            android:layout_height="40dp" 
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="9.0dip"
+            android:layout_marginTop="6.0dip"
+            android:background="#C60E2A"
+            android:text="结算" />
+
+        <TextView
+            android:id="@+id/tv_count2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="8.0dip"
+              android:layout_marginTop="6.0dip"
+            android:layout_toRightOf="@id/tv_count1"
+            android:text="商品金额总计：" />
+
+        <TextView
+            android:id="@+id/tv_count_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_toRightOf="@id/tv_count2"
+              android:layout_marginTop="6.0dip"
+            android:text="￥0.0" />
+    </RelativeLayout> 
+
+</LinearLayout>

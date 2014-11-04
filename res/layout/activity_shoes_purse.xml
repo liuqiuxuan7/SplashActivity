@@ -1,0 +1,205 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/id_title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@drawable/android_title_bg"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/purse"
+            android:textColor="#ffffff"
+            android:textSize="20.0dip" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/sv_goods"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/lv_goodsdetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+                 <ImageView 
+                    android:id="@+id/image_shose_detail" 
+                    android:layout_width="fill_parent" 
+                    android:layout_height="180.0dip" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="#C60E2A" >
+
+                    <TextView
+                        android:id="@+id/tv_shose_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        
+                        android:layout_centerInParent="true"
+                        android:text="坑爹商品，不解释"
+						android:textSize="18sp"/>
+                </RelativeLayout>
+
+               <RelativeLayout 
+                        android:layout_width="fill_parent" 
+                        android:layout_height="45.0dip">
+                        
+                        <TextView 
+                            android:id="@+id/text_name"
+                            android:layout_width="wrap_content" 
+                            android:layout_height="wrap_content" 
+                            android:layout_marginLeft="20.0dip" 
+                            android:layout_marginTop="8.0dip" 
+                            android:text="售价：" />
+                        <TextView 
+                            android:textSize="17.0dip" 
+                            android:textColor="#000000"
+                            android:id="@+id/text_shoes_price" 
+                            android:layout_width="wrap_content" 
+                            android:layout_height="wrap_content" 
+                            android:layout_marginLeft="10.0dip" 
+                            android:text="￥1000" 
+                            android:layout_toRightOf="@+id/text_name" 
+                            android:layout_alignBaseline="@+id/text_name" 
+                            android:layout_alignBottom="@+id/text_name" />
+                        
+                    </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_shoes_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="8dp"
+                        android:text="颜色：" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_shoes_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" >
+
+                    <TextView
+                        android:id="@+id/tv_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="8dp"
+                        android:text="尺码：" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" >
+
+                    <TextView
+                        android:id="@+id/tv_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="8dp"
+                        android:text="数量：" />
+
+                    <EditText
+                        android:id="@+id/et_count"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/stocknumber"
+                        android:gravity="center"
+                        android:textColor="@android:color/black" >
+
+                        <requestFocus />
+                    </EditText>
+
+                    <TextView
+                        android:id="@+id/tv_inventory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="8dp"
+                        android:text="(库存0件)" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/bt_shose_addcollect"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"      
+                    android:background="#C60E2A"
+                    android:text="添加收藏"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btn_shose_shopping"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:background="#C60E2A"
+                    android:text="加入购物车"
+                    android:textSize="16sp" />                
+               
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" 
+                    android:background="@drawable/size1">
+
+                    <HorizontalScrollView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="35.0dip"
+                                android:background="#ff000000"
+                                android:orientation="horizontal" >
+   
+                            </LinearLayout>
+                       </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

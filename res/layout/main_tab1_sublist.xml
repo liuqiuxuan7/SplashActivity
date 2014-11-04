@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_tab_center_sub"
+    android:layout_width="fill_parent"
+    android:layout_height="100dip"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="100dip"
+        android:layout_height="fill_parent"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/main_tab1_list_icon"
+            android:layout_width="fill_parent"
+            android:layout_height="70dip"
+            android:gravity="center"
+            android:src="@drawable/sdsyxw" >
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tab1_list_title"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="5"
+                android:text="Title"
+                android:textColor="#000000"
+                android:textSize="7pt" />
+
+            <TextView
+                android:id="@+id/tab1_list_text"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="5"
+                android:text="Title"
+                android:textColor="#636563"
+                android:textSize="5pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="60dip"
+            android:layout_height="30dip"
+            android:layout_marginTop="10dip"
+            android:layout_weight="5"
+            android:background="@drawable/btn"
+            android:gravity="right" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

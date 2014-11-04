@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/id_title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:gravity="center"
+        android:background="@drawable/android_title_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bags"
+            android:textColor="#ffffff"
+            android:textSize="20.0dip" />
+    </LinearLayout>
+  <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="32dp">
+        <Button 
+            android:id="@+id/btn_bag1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="32dp"
+            android:background="@color/honeydew"
+            android:text="可爱果冻包"/>
+         <Button 
+            android:id="@+id/btn_bag2"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:background="@color/honeydew"
+            android:text="实用双肩包"/>
+          <Button 
+            android:id="@+id/btn_bag3"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:background="@color/honeydew"
+            android:text="迷人小包包"/>
+    </LinearLayout>
+    
+      <GridView
+        android:id="@+id/grid_bags"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+        android:textSize="48sp" />
+      
+     <!-- <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_bags"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </android.support.v4.view.ViewPager>
+     -->
+
+   <!--  <ScrollView
+        android:id="@+id/id_more_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+       <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="7.0dip"
+            android:layout_marginRight="7.0dip"
+            android:orientation="vertical" >
+  
+            
+         <Gallery
+                    android:id="@+id/index_digital_gallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/index_gallery_height"
+                    android:layout_marginBottom="15dp"
+                    android:spacing="10dp" />
+         
+      <FrameLayout 
+          android:id="@+id/fragment_bags_fragment"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+        
+         </FrameLayout>   
+        </LinearLayout>
+    </ScrollView> -->
+
+</LinearLayout>

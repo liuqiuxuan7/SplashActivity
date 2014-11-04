@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_alignParentTop="true"
+        android:background="#940400"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/back_btn" >
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="40dip"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="8"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/buylottery_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="title"
+                    android:textColor="#ffffff"
+                    android:textSize="9pt" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/buylottery_title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="title"
+                    android:textColor="#F7C36B"
+                    android:textSize="6pt" >
+                </TextView>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_weight="2"
+                android:gravity="right"
+                android:src="@drawable/menu_down" >
+            </ImageView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="40dip"
+        android:background="#ffffff" >
+
+        <!-- center -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <!-- top tool -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+<!--  抽屉效果界面  -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/buylottery_frame_item1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="3.3"
+                        android:background="@drawable/tab1" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:text="普通选号"
+                            android:textColor="#000000"
+                            android:textSize="6pt" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/buylottery_frame_item2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="3.3"
+                        android:background="@drawable/tab2" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:text="胆拖选号"
+                            android:textColor="#000000"
+                            android:textSize="6pt" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/buylottery_frame_item3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="3.3"
+                        android:background="@drawable/tab2" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:text="机选号码"
+                            android:textColor="#000000"
+                            android:textSize="6pt" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            
+            <!-- change freame -->
+
+          <RelativeLayout
+                android:id="@+id/buylottery_changeframe"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent" >
+            </RelativeLayout> 
+        </LinearLayout>
+        <!-- botton items -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="90dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="-90dip"
+            android:background="#ffffff" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_alignParentTop="true"
+                android:background="#E7E3E7"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/buylottery_add"
+                    android:layout_width="35dip"
+                    android:layout_height="35dip"
+                    android:layout_marginTop="2dip"
+                    android:src="@drawable/btnadd" >
+                </ImageView>
+
+                <EditText
+                    android:layout_width="80dip"
+                    android:layout_height="35dip"
+                    android:layout_marginTop="2dip"
+                    android:text="1" >
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/buylottery_reduce"
+                    android:layout_width="35dip"
+                    android:layout_height="35dip"
+                    android:layout_marginTop="2dip"
+                    android:src="@drawable/btnreduce" >
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dip"
+                    android:layout_marginTop="2dip"
+                    android:text="共0注"
+                    android:textColor="#000000" >
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dip"
+                    android:layout_marginTop="2dip"
+                    android:text="0"
+                    android:textColor="#950055" >
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dip"
+                    android:layout_marginTop="2dip"
+                    android:text="元"
+                    android:textColor="#000000" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_alignParentBottom="true"
+                android:background="#ffffff"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/buylottery_bottom1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/buylttery_botton1_selector" >
+                </Button>
+
+                <Button
+                    android:id="@+id/buylottery_bottom2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/buylttery_botton2_selector" >
+                </Button>
+
+                <Button
+                    android:id="@+id/buylottery_bottom3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/buylttery_botton3_selector" >
+                </Button>
+
+                <Button
+                    android:id="@+id/buylottery_bottom4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/buylttery_botton4_selector" >
+                </Button>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+	<ImageView
+	    android:layout_marginTop="8dp"
+	    android:layout_marginLeft="8dp" 
+	    android:id="@+id/iv_todaypurchase"
+	    android:layout_width="72dp"
+	    android:layout_height="72dp"
+	    android:layout_centerVertical="true"/>
+
+	<TextView
+	    android:id="@+id/tv_name"
+	    android:layout_marginLeft="8dp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignTop="@+id/iv_todaypurchase"
+	    android:layout_toRightOf="@+id/iv_todaypurchase"
+	    android:text="标题"/>
+	<!-- <TextView
+	    android:id="@+id/tv_address"
+	    android:layout_marginLeft="8dp"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/tv_name"
+	   android:layout_toRightOf="@+id/iv_todaypurchase"
+	    android:text="地址"/>
+ -->	<TextView
+	    android:layout_marginTop="8dp"
+	    android:id="@+id/tv_price"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/tv_name"
+	    android:layout_below="@+id/tv_name"
+	    android:textSize="10sp" 
+	    android:text="价格"/>
+
+	    <TextView
+	        android:id="@+id/tv_is_reservation_required "
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	         android:layout_alignLeft="@+id/iv_todaypurchase"
+	    android:layout_alignTop="@+id/iv_todaypurchase"
+	    android:background="#FE8C33" 
+	    android:textSize="10sp"
+	    android:textColor="#ffffff"
+	    android:text="是否需要预约"/>
+
+</RelativeLayout>
